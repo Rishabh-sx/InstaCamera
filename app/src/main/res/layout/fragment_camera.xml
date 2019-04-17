@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.otaliastudios.cameraview.CameraView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/camera"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:keepScreenOn="true"
+
+        app:cameraAudio="on"
+        app:cameraExperimental="false"
+        app:cameraFlash="auto"
+        app:cameraGestureLongTap="none"
+        app:cameraGesturePinch="zoom"
+        app:cameraGestureScrollHorizontal="exposureCorrection"
+        app:cameraGestureScrollVertical="none"
+        app:cameraGestureTap="focusWithMarker"
+        app:cameraGrid="off"
+        app:cameraMode="picture"
+        app:cameraPlaySounds="false" />
+
+    <Button
+        android:id="@+id/btn_mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_margin="10dp"
+        android:text="Mode - Camera" />
+
+    <Button
+        android:id="@+id/btn_toggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="10dp"
+        android:text="Switch" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Camera" />
+
+        <Button
+            android:id="@+id/btn_video"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Video" />
+
+        <Button
+            android:id="@+id/btn_flash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Flash - Auto" />
+    </LinearLayout>
+
+</RelativeLayout>
